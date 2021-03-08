@@ -6,16 +6,82 @@
         <div class="col-auto d-none d-sm-block">
             <h3><strong>Analytics</strong> Dashboard</h3>
         </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-12 col-xxl-5 d-flex">
+            <div class="w-100">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Product</h5>
+                                <h1 class="display-5 mt-1 mb-3">0</h1>
+                                <div class="mb-1">
+                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> 0% </span>
+                                    <span class="text-muted">Since last week</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Courier</h5>
+                                <h1 class="display-5 mt-1 mb-3">0</h1>
+                                <div class="mb-1">
+                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> 0% </span>
+                                    <span class="text-muted">Since last week</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Category</h5>
+                                <h1 class="display-5 mt-1 mb-3">0</h1>
+                                <div class="mb-1">
+                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> 0% </span>
+                                    <span class="text-muted">Since last week</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Discount</h5>
+                                <h1 class="display-5 mt-1 mb-3">0</h1>
+                                <div class="mb-1">
+                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> 0% </span>
+                                    <span class="text-muted">Since last week</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="col-auto ml-auto text-right mt-n1">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-transparent p-0 mt-1 mb-0">
-                    <li class="breadcrumb-item"><a href="#">AdminKit</a></li>
-                    <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Analytics</li>
-                </ol>
-            </nav>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Transaction</h5>
+                                <h1 class="display-5 mt-1 mb-3">0</h1>
+                                <div class="mb-1">
+                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> 0% </span>
+                                    <span class="text-muted">Since last week</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Report</h5>
+                                <h1 class="display-5 mt-1 mb-3">0</h1>
+                                <div class="mb-1">
+                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> 0% </span>
+                                    <span class="text-muted">Since last week</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
         </div>
+
     </div>
 </div>
 @stop
