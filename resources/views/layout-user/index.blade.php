@@ -46,22 +46,7 @@
                 </div>
                 <div class="ht-right">
                     <a href="{{ url('dashboard')}}" class="login-panel"><i class="fa fa-dashboard"></i>Dashboard</a>
-                    <a href="#" class="login-panel"><i class="fa fa-user"></i>Login</a>
-                    <div class="lan-selector">
-                        <select class="language_drop" name="countries" id="countries" style="width:300px;">
-                            <option value='yt' data-image="{{ asset('/assets-user/img/flag-1.jpg') }}" data-imagecss="flag yt"
-                                data-title="English">English</option>
-                            <option value='yu' data-image="{{ asset('/assets-user/img/flag-2.jpg') }}" data-imagecss="flag yu"
-                                data-title="Bangladesh">German </option>
-                        </select>
-                    </div>
-                    <div class="top-social">
-                        <a href="#"><i class="ti-facebook"></i></a>
-                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                        <a href="#"><i class="ti-linkedin"></i></a>
-                        <a href="#"><i class="ti-pinterest"></i></a>
-                    </div>
-                    
+                    <a href="{{ url('login') }}" class="login-panel"><i class="fa fa-user"></i>Login</a>
                 </div>
             </div>
         </div>
@@ -88,31 +73,21 @@
                         <ul class="nav-right">
                             <li class="heart-icon">
                                 <a href="#">
-                                    <i class="icon_heart_alt"></i>
-                                    <span>1</span>
+                                    <i class="icon_comment_alt"></i>
+                                    <!-- Notification -->
+                                    <span>0</span>
                                 </a>
                             </li>
                             <li class="cart-icon">
                                 <a href="#">
                                     <i class="icon_bag_alt"></i>
-                                    <span>3</span>
+                                    <!-- Cart Total -->
+                                    <span>0</span>
                                 </a>
                                 <div class="cart-hover">
                                     <div class="select-items">
                                         <table>
                                             <tbody>
-                                                <tr>
-                                                    <td class="si-pic"><img src="{{ asset('/assets-user/img/select-product-1.jpg') }}" alt=""></td>
-                                                    <td class="si-text">
-                                                        <div class="product-selected">
-                                                            <p>$60.00 x 1</p>
-                                                            <h6>Kabino Bedside Table</h6>
-                                                        </div>
-                                                    </td>
-                                                    <td class="si-close">
-                                                        <i class="ti-close"></i>
-                                                    </td>
-                                                </tr>
                                                 <tr>
                                                     <td class="si-pic"><img src="{{ asset('/assets-user/img/select-product-2.jpg') }}" alt=""></td>
                                                     <td class="si-text">
@@ -133,12 +108,12 @@
                                         <h5>$120.00</h5>
                                     </div>
                                     <div class="select-button">
-                                        <a href="#" class="primary-btn view-card">VIEW CARD</a>
-                                        <a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
+                                        <a href="{{ url('cart') }}" class="primary-btn view-card">VIEW CART</a>
+                                        <a href="{{ url('checkout') }}" class="primary-btn checkout-btn">CHECK OUT</a>
                                     </div>
                                 </div>
                             </li>
-                            <li class="cart-price">$150.00</li>
+                            <li class="cart-price">$0</li>
                         </ul>
                     </div>
                 </div>
@@ -153,29 +128,22 @@
                         <ul class="depart-hover">
                             <li class="active"><a href="#">Women’s Clothing</a></li>
                             <li><a href="#">Men’s Clothing</a></li>
-                            <li><a href="#">Underwear</a></li>
-                            <li><a href="#">Kid's Clothing</a></li>
-                            <li><a href="#">Brand Fashion</a></li>
-                            <li><a href="#">Accessories/Shoes</a></li>
-                            <li><a href="#">Luxury Brands</a></li>
-                            <li><a href="#">Brand Outdoor Apparel</a></li>
                         </ul>
                     </div>
                 </div>
                 <nav class="nav-menu mobile-menu">
                     <ul>
-                        <li class="active"><a href="./index.html">Home</a></li>
-                        <li><a href="./shop.html">Shop</a></li>
-                        <li><a href="#">Collection</a>
+                        <li class="{{ (request()->is('home*')) ? 'active' : '' }}"><a href="{{ url('home') }}">Home</a></li>
+                        <li class="{{ (request()->is('shop*')) ? 'active' : '' }}"><a href="{{ url('shop') }}">Shop</a></li>
+                        <!-- <li><a href="#">Collection</a>
                             <ul class="dropdown">
                                 <li><a href="#">Men's</a></li>
                                 <li><a href="#">Women's</a></li>
                                 <li><a href="#">Kid's</a></li>
                             </ul>
-                        </li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <li><a href="#">Pages</a>
+                        </li> -->
+                        <li class="{{ (request()->is('contact*')) ? 'active' : '' }}"><a href="{{ url('contact') }}">Contact</a></li>
+                        <!-- <li><a href="#">Pages</a>
                             <ul class="dropdown">
                                 <li><a href="./blog-details.html">Blog Details</a></li>
                                 <li><a href="./shopping-cart.html">Shopping Cart</a></li>
@@ -184,7 +152,7 @@
                                 <li><a href="./register.html">Register</a></li>
                                 <li><a href="./login.html">Login</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
                 <div id="mobile-menu-wrap"></div>
@@ -224,7 +192,7 @@
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Checkout</a></li>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="#">Serivius</a></li>
+                            <li><a href="#">Services</a></li>
                         </ul>
                     </div>
                 </div>
@@ -257,7 +225,7 @@
                     <div class="col-lg-12">
                         <div class="copyright-text">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> 
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </div>
                         <div class="payment-pic">

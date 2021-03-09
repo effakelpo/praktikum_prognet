@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
@@ -25,8 +26,17 @@ Route::get('/', function () {
     return view('user.index');
 });
 
+// Route Login
+Route::get('/login', [AuthController::class, 'login']);
+Route::get('/register', [AuthController::class, 'register']);
+
 // Route Customer
 Route::get('/home', [UserController::class, 'index']);
+Route::get('/shop', [UserController::class, 'shop']);
+Route::get('/blog', [UserController::class, 'blog']);
+Route::get('/contact', [UserController::class, 'contact']);
+Route::get('/cart', [UserController::class, 'cart']);
+Route::get('/checkout', [UserController::class, 'checkout']);
 
 // Route Admin
 Route::get('/dashboard', [AdminController::class, 'index']);

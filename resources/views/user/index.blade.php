@@ -8,23 +8,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
-                        <span>Bag,kids</span>
-                        <h1>Black friday</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore</p>
-                        <a href="#" class="primary-btn">Shop Now</a>
-                    </div>
-                </div>
-                <div class="off-card">
-                    <h2>Sale <span>50%</span></h2>
-                </div>
-            </div>
-        </div>
-        <div class="single-hero-items set-bg" data-setbg="{{ asset('/assets-user/img/hero-2.jpg') }}">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <span>Bag,kids</span>
+                        <span>Bag,Woman</span>
                         <h1>Black friday</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore</p>
@@ -44,7 +28,7 @@
 <div class="banner-section spad">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="single-banner">
                     <img src="{{ asset('/assets-user/img/banner-1.jpg') }}" alt="">
                     <div class="inner-text">
@@ -52,19 +36,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="single-banner">
                     <img src="{{ asset('/assets-user/img/banner-2.jpg') }}" alt="">
                     <div class="inner-text">
                         <h4>Women’s</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="single-banner">
-                    <img src="{{ asset('/assets-user/img/banner-3.jpg') }}" alt="">
-                    <div class="inner-text">
-                        <h4>Kid’s</h4>
                     </div>
                 </div>
             </div>
@@ -191,11 +167,11 @@
 <!-- Women Banner Section End -->
 
 <!-- Deal Of The Week Section Begin-->
-<section class="deal-of-week set-bg spad" data-setbg="{{ asset('/assets-user/img/time-bg.jpg') }}">
+<!-- <section class="deal-of-week set-bg spad" data-setbg="{{ asset('/assets-user/img/time-bg.jpg') }}">
     <div class="container">
         <div class="col-lg-6 text-center">
             <div class="section-title">
-                <h2>Deal Of The Week</h2>
+                <h2>Countdown Pembayaran</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br /> do ipsum dolor sit amet,
                     consectetur adipisicing elit </p>
                 <div class="product-price">
@@ -224,7 +200,7 @@
             <a href="#" class="primary-btn">Shop Now</a>
         </div>
     </div>
-</section>
+</section> -->
 <!-- Deal Of The Week Section End -->
 
 <!-- Man Banner Section Begin -->
@@ -350,37 +326,37 @@
     <div class="insta-item set-bg" data-setbg="{{ asset('/assets-user/img/insta-1.jpg') }}">
         <div class="inside-text">
             <i class="ti-instagram"></i>
-            <h5><a href="#">colorlib_Collection</a></h5>
+            <h5><a href="#">fashi_Collection</a></h5>
         </div>
     </div>
     <div class="insta-item set-bg" data-setbg="{{ asset('/assets-user/img/insta-2.jpg') }}">
         <div class="inside-text">
             <i class="ti-instagram"></i>
-            <h5><a href="#">colorlib_Collection</a></h5>
+            <h5><a href="#">fashi_Collection</a></h5>
         </div>
     </div>
     <div class="insta-item set-bg" data-setbg="{{ asset('/assets-user/img/insta-3.jpg') }}">
         <div class="inside-text">
             <i class="ti-instagram"></i>
-            <h5><a href="#">colorlib_Collection</a></h5>
+            <h5><a href="#">fashi_Collection</a></h5>
         </div>
     </div>
     <div class="insta-item set-bg" data-setbg="{{ asset('/assets-user/img/insta-4.jpg') }}">
         <div class="inside-text">
             <i class="ti-instagram"></i>
-            <h5><a href="#">colorlib_Collection</a></h5>
+            <h5><a href="#">fashi_Collection</a></h5>
         </div>
     </div>
     <div class="insta-item set-bg" data-setbg="{{ asset('/assets-user/img/insta-5.jpg') }}">
         <div class="inside-text">
             <i class="ti-instagram"></i>
-            <h5><a href="#">colorlib_Collection</a></h5>
+            <h5><a href="#">fashi_Collection</a></h5>
         </div>
     </div>
     <div class="insta-item set-bg" data-setbg="{{ asset('/assets-user/img/insta-6.jpg') }}">
         <div class="inside-text">
             <i class="ti-instagram"></i>
-            <h5><a href="#">colorlib_Collection</a></h5>
+            <h5><a href="#">fashi_Collection</a></h5>
         </div>
     </div>
 </div>
@@ -528,7 +504,8 @@
             </div>
             <div class="logo-item">
                 <div class="tablecell-inner">
-                    <img src="{{ asset('/assets-user/img/logo-carousel/logo-5.png') }}" alt="">
+                    <img src="{{ asset('/assets-user/img/logo-carousel/logo-4.png') }}" alt="">
+                    
                 </div>
             </div>
         </div>
