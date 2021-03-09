@@ -7,6 +7,9 @@ Don't forget to run the command which will generate an application (encryption) 
 php artisan key:generate
 ```
 
+### Progress Design
+* Design sudah 80%
+
 ### Modul 1
 * Bisa Coba login laravel 8
 
