@@ -13,7 +13,7 @@ php artisan key:generate
 ### Login
 * Bisa Coba login laravel 8
 
-### Modul 2
+### Crud
 * Bisa coba buat CRUD laravel 8
 
 ### Modul 3
