@@ -10,7 +10,7 @@ php artisan key:generate
 ### Progress Design
 * Design sudah 80%
 
-### Modul 1
+### Login
 * Bisa Coba login laravel 8
 
 ### Modul 2
