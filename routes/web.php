@@ -23,22 +23,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('user.index');
+    return view('login');
 });
 
 // Route Login
-Route::get('/login', [AuthController::class, 'login']);
+Route::get('/login', [AuthController::class, 'login'])->name('login');;
 Route::get('/register', [AuthController::class, 'register']);
+Route::post('/postlogin',[AuthController::class, 'postlogin']);
+Route::get('/logout',[AuthController::class, 'logout']);
 
 // Route Customer
+Route::group(['middleware' => ['auth','CekLevel:user']], function(){
 Route::get('/home', [UserController::class, 'index']);
 Route::get('/shop', [UserController::class, 'shop']);
 Route::get('/blog', [UserController::class, 'blog']);
 Route::get('/contact', [UserController::class, 'contact']);
 Route::get('/cart', [UserController::class, 'cart']);
 Route::get('/checkout', [UserController::class, 'checkout']);
+});
 
 // Route Admin
+Route::group(['middleware' => ['auth','CekLevel:admin']], function(){
 Route::get('/dashboard', [AdminController::class, 'index']);
 Route::get('/product', [ProductController::class, 'index']);
 Route::get('/courier', [CourierController::class, 'index']);
@@ -46,3 +51,4 @@ Route::get('/category', [CategoryController::class, 'index']);
 Route::get('/discount', [DiscountController::class, 'index']);
 Route::get('/transaction', [TransactionController::class, 'index']);
 Route::get('/reports', [ReportsController::class, 'index']);
+});

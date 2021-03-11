@@ -264,7 +264,7 @@
                                 <a class="dropdown-item" href="#"><i class="align-middle mr-1"
                                         data-feather="help-circle"></i> Help Center</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Log out</a>
+                                <a class="dropdown-item" href="/logout">Log out</a>
                             </div>
                         </li>
                     </ul>
