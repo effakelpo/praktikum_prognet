@@ -44,11 +44,11 @@ Route::get('/checkout', [UserController::class, 'checkout']);
 
 // Route Admin
 Route::group(['middleware' => ['auth','CekLevel:admin']], function(){
-Route::get('/dashboard', [AdminController::class, 'index']);
-Route::get('/product', [ProductController::class, 'index']);
-Route::get('/courier', [CourierController::class, 'index']);
-Route::get('/category', [CategoryController::class, 'index']);
-Route::get('/discount', [DiscountController::class, 'index']);
-Route::get('/transaction', [TransactionController::class, 'index']);
+Route::get('/dashboard', [AdminsController::class, 'index']);
+Route::get('/product', [ProductsController::class, 'index']);
+Route::get('/courier', [CouriersController::class, 'index']);
+Route::get('/category', [ProductCategoriesController::class, 'index']);
+Route::get('/discount', [DiscountsController::class, 'index']);
+Route::get('/transaction', [TransactionsController::class, 'index']);
 Route::get('/reports', [ReportsController::class, 'index']);
 });
