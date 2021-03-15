@@ -1,13 +1,13 @@
 <?php
 
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminsController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\CourierController;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\DiscountController;
-use App\Http\Controllers\TransactionController;
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\CouriersController;
+use App\Http\Controllers\ProductCategoriesController;
+use App\Http\Controllers\DiscountsController;
+use App\Http\Controllers\TransactionsController;
 use App\Http\Controllers\ReportsController;
 use Illuminate\Support\Facades\Route;
 
