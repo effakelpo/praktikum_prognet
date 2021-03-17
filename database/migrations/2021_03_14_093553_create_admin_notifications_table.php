@@ -22,7 +22,7 @@ class CreateAdminNotificationsTable extends Migration
             $table->timestamp('read_at')->nullable();
             $table->timestamps();
 
-            $table->foreign('notifiable_id')->references('id')->on('admins');
+            $table->foreign('notifiable_id')->references('id')->on('users');
         });
     }
 

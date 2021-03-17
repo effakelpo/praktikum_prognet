@@ -21,7 +21,7 @@ class CreateResponsesTable extends Migration
             $table->timestamps();
 
             $table->foreign('review_id')->references('id')->on('product_reviews');
-            $table->foreign('admin_id')->references('id')->on('admins');
+            $table->foreign('admin_id')->references('id')->on('users');
         });
     }
 

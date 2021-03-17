@@ -23,11 +23,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('login');
-});
+    return view('login.indexlogin');
+})->name('homelogin');
 
 // Route Login
-Route::get('/login', [AuthController::class, 'login'])->name('login');;
+Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::get('/register', [AuthController::class, 'register']);
 Route::post('/postlogin',[AuthController::class, 'postlogin']);
 Route::get('/logout',[AuthController::class, 'logout']);
