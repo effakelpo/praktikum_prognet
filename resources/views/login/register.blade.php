@@ -25,6 +25,10 @@
                             <label for="con-pass">Confirm Password *</label>
                             <input type="text" id="con-pass">
                         </div>
+                        <div class="group-input">
+                            <label for="con-pass">Photo Profile</label>
+                            <input type="file" id="profile-pic">
+                        </div>
                         <button type="submit" class="site-btn register-btn">REGISTER</button>
                     </form>
                     <div class="switch-login">

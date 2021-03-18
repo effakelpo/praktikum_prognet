@@ -17,6 +17,11 @@ class CouriersController extends Controller
         return view('admin.courier.index');
     }
 
+    public function add()
+    {
+        return view('admin.courier.add');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

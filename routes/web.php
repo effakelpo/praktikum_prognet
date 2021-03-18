@@ -34,21 +34,37 @@ Route::get('/logout',[AuthController::class, 'logout']);
 
 // Route Customer
 Route::group(['middleware' => ['auth','CekLevel:user']], function(){
-Route::get('/home', [UserController::class, 'index']);
-Route::get('/shop', [UserController::class, 'shop']);
-Route::get('/blog', [UserController::class, 'blog']);
-Route::get('/contact', [UserController::class, 'contact']);
-Route::get('/cart', [UserController::class, 'cart']);
-Route::get('/checkout', [UserController::class, 'checkout']);
+    Route::get('/home', [UserController::class, 'index']);
+    Route::get('/shop', [UserController::class, 'shop']);
+    Route::get('/blog', [UserController::class, 'blog']);
+    Route::get('/contact', [UserController::class, 'contact']);
+    Route::get('/cart', [UserController::class, 'cart']);
+    Route::get('/checkout', [UserController::class, 'checkout']);
 });
 
 // Route Admin
 Route::group(['middleware' => ['auth','CekLevel:admin']], function(){
-Route::get('/dashboard', [AdminsController::class, 'index']);
-Route::get('/product', [ProductsController::class, 'index']);
-Route::get('/courier', [CouriersController::class, 'index']);
-Route::get('/category', [ProductCategoriesController::class, 'index']);
-Route::get('/discount', [DiscountsController::class, 'index']);
-Route::get('/transaction', [TransactionsController::class, 'index']);
-Route::get('/reports', [ReportsController::class, 'index']);
+    // Dashboard
+    Route::get('/dashboard', [AdminsController::class, 'index']);
+
+    // Product Page
+    Route::get('/product', [ProductsController::class, 'index']);
+    Route::get('/product-add', [ProductsController::class, 'add']);
+
+    // Courier Page
+    Route::get('/courier', [CouriersController::class, 'index']);
+    Route::get('/courier-add', [CouriersController::class, 'add']);
+
+    // Category Page
+    Route::get('/category', [ProductCategoriesController::class, 'index']);
+    Route::get('/category-add', [ProductCategoriesController::class, 'add']);
+
+    // Discount Page
+    Route::get('/discount', [DiscountsController::class, 'index']);
+
+    // Transaction Page
+    Route::get('/transaction', [TransactionsController::class, 'index']);
+
+    // Reports Page
+    Route::get('/reports', [ReportsController::class, 'index']);
 });

@@ -1,10 +1,10 @@
 @extends('layout-admin.index')
-@section('title', 'Edit | Courier')
+@section('title', 'Add | Courier')
 @section('content')
 <div class="container-fluid p-0">
     <div class="row mb-2 mb-xl-3">
         <div class="col-auto d-none d-sm-block">
-            <h3><strong>Edit Courier</strong></h3>
+            <h3><strong>Add Courier</strong></h3>
         </div>
     </div>
     <div class="row">

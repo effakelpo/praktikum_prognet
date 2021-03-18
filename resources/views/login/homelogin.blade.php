@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="ht-right">
-                    <a href="{{ url('login') }}" class="login-panel"><i class="fa fa-dashboard"></i>Dashboard</a>
+                    <!-- <a href="{{ url('login') }}" class="login-panel"><i class="fa fa-dashboard"></i>Dashboard</a> -->
                     <a href="{{ url('login') }}" class="login-panel"><i class="fa fa-user"></i>Login</a>
                 </div>
             </div>
