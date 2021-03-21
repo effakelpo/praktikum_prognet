@@ -17,6 +17,11 @@ class DiscountsController extends Controller
         return view('admin.discount.index');
     }
 
+    public function add()
+    {
+        return view('admin.discount.add');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

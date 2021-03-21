@@ -61,9 +61,11 @@ Route::group(['middleware' => ['auth','CekLevel:admin']], function(){
 
     // Discount Page
     Route::get('/discount', [DiscountsController::class, 'index']);
+    Route::get('/discount-add', [DiscountsController::class, 'add']);
 
     // Transaction Page
     Route::get('/transaction', [TransactionsController::class, 'index']);
+    Route::get('/transaction-add', [TransactionsController::class, 'add']);
 
     // Reports Page
     Route::get('/reports', [ReportsController::class, 'index']);

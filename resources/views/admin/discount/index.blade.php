@@ -17,34 +17,23 @@
                     <thead>
                         <tr>
                             <th style="width:10%;">#</th>
-                            <th style="width:40%;">Product Name</th>
-                            <th style="width:25%">Price</th>
-                            <th class="d-none d-md-table-cell" style="width:25%">Stock</th>
+                            <th style="width:40%;">Percentage</th>
+                            <th style="width:25%">Start</th>
+                            <th class="d-none d-md-table-cell" style="width:25%">End</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>Vanessa Tucker</td>
-                            <td>864-348-0485</td>
-                            <td class="d-none d-md-table-cell">June 21, 1961</td>
+                            <td>10%</td>
+                            <td>2019-6-2</td>
+                            <td class="d-none d-md-table-cell">2019-6-10</td>
                             <td class="table-action">
                                 <a href="#"><i class="align-middle" data-feather="edit-2"></i></a>
                                 <a href="#"><i class="align-middle" data-feather="trash"></i></a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>William Harris</td>
-                            <td>914-939-2458</td>
-                            <td class="d-none d-md-table-cell">May 15, 1948</td>
-                            <td class="table-action">
-                                <a href="#"><i class="align-middle" data-feather="edit-2"></i></a>
-                                <a href="#"><i class="align-middle" data-feather="trash"></i></a>
-                            </td>
-                        </tr>
-                        
                     </tbody>
                 </table>
             </div>
